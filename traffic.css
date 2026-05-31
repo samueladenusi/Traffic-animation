@@ -72,9 +72,8 @@ body {
 .road-pole {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  gap: 280px;
-  padding: 0 200px;
+  gap: 350px;
+  padding-left: 190px;
 }
 
 .road-pole img {
@@ -121,7 +120,7 @@ body {
 }
 .woman {
   position: absolute;
-  top: 239px;
+  top: 280px;
   left: -110px;
   height: 150px;
   z-index: 1;
@@ -159,7 +158,7 @@ body {
 
 .man {
   height: 170px;
-  bottom: 270px;
+  bottom: 290px;
 
 
   animation: others 5s linear infinite;
