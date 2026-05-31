@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  max-width: 100%;
+  
+}
+
+.skye,
+.road,
+.buildings {
+  position: relative;
+  width: 100vw;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buildings {
+  object-fit: fill;
+  width: 100%;
+}
+
+.road {
+  height: 26vh;
+}
+.aeroplane {
+  margin-top: 30px;
+  height: 125px;
+  position: absolute;
+  left: 1400px;
+  top: 1px;
+  z-index: 5;
+
+  animation: aeroplane 3s linear infinite;
+}
+@keyframes aeroplane {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+.buildings {
+  position: absolute;
+  top: 40px;
+}
+.green {
+  /* position: absolute; */
+  width: 100%;
+  height: 20px;
+  top: 311px;
+  position: absolute;
+  background-color: #55ff55;
+  /* z-index: 1; */
+}
+.brown {
+  position: relative;
+  background-color: #333333;
+  width: 100%;
+  height: 10vh;
+  margin-top: -5px;
+  overflow: hidden;
+  z-index: 5;
+}
+.road-pole {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 280px;
+  padding: 0 200px;
+}
+
+.road-pole img {
+  position: absolute;
+  height: 130px;
+  bottom: 150px;
+  z-index: 5;
+}
+
+.one-way {
+  width: 200px;
+  height: 160px !important;
+  object-fit: cover;
+}
+.sport-car,
+.truck,
+.yellow-car {
+  width: 190px;
+  position: absolute;
+  bottom: 40px;
+  left: -200px;
+
+  animation: cars 3s linear infinite;
+}
+.yellow-car {
+  bottom: -45px;
+
+  animation: cars 5s linear infinite;
+}
+.truck {
+  bottom: -70px;
+  width: 190px;
+
+  animation: cars 7s linear infinite;
+}
+
+@keyframes cars {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(750%);
+  }
+}
+.woman {
+  position: absolute;
+  top: 239px;
+  left: -110px;
+  height: 150px;
+  z-index: 1;
+
+  animation: woman 5s linear infinite;
+}
+@keyframes woman {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+.man,
+.blue-truck,
+.bike,
+.yellow-taxi,
+.helicopter {
+  position: absolute;
+  bottom: 200px;
+  left: 1500px;
+}
+.bike {
+  animation: bike 4s linear infinite;
+}
+@keyframes bike {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200%);
+  }
+}
+
+.man {
+  height: 170px;
+  bottom: 270px;
+
+
+  animation: others 5s linear infinite;
+}
+.yellow-taxi {
+  width: 200px;
+  height: 230px;
+  bottom: 190px;
+
+  animation: others 5.3s linear infinite;
+}
+.blue-truck {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  bottom: 95px;
+  z-index: 1;
+
+  animation: others 7s linear infinite;
+}
+.helicopter {
+  /* left: 1000px; */
+  width: 200px;
+  bottom: 410px;
+
+  animation: others 6.5s linear infinite;
+}
+@keyframes others {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}
