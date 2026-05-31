@@ -115,7 +115,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(750%);
+    transform: translateX(900%);
   }
 }
 .woman {
@@ -132,7 +132,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(900%);
+    transform: translateX(1100%);
   }
 }
 .man,
