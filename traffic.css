@@ -21,10 +21,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.buildings {
-  object-fit: fill;
-  width: 100%;
-}
 
 .road {
   height: 26vh;
@@ -50,6 +46,7 @@ body {
 .buildings {
   position: absolute;
   top: 40px;
+  width: 100%;
 }
 .green {
   /* position: absolute; */
